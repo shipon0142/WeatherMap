@@ -29,11 +29,12 @@ public class Main {
     private Integer humidity;
     @SerializedName("temp_kf")
     @Expose
-    private Integer tempKf;
+    private Double tempKf;
 
     public Double getTemp() {
         return temp;
     }
+
 
     public void setTemp(Double temp) {
         this.temp = temp;
@@ -42,6 +43,13 @@ public class Main {
     public Double getTempMin() {
         return tempMin;
     }
+    public Double getTempMinCentigrate() {
+        return tempMin-273.0;
+    }
+    public Double getTempMinFarenheit() {
+        return ((tempMin-273.0)*1.8)+32.0;
+    }
+
 
     public void setTempMin(Double tempMin) {
         this.tempMin = tempMin;
@@ -49,6 +57,12 @@ public class Main {
 
     public Double getTempMax() {
         return tempMax;
+    }
+    public Double getTempMaxCentigrate() {
+        return tempMax-273.0;
+    }
+    public Double getTempMaxFarenheit() {
+        return ((tempMax-273.0)*1.8)+32.0;
     }
 
     public void setTempMax(Double tempMax) {
@@ -87,11 +101,11 @@ public class Main {
         this.humidity = humidity;
     }
 
-    public Integer getTempKf() {
+    public Double getTempKf() {
         return tempKf;
     }
 
-    public void setTempKf(Integer tempKf) {
+    public void setTempKf(Double tempKf) {
         this.tempKf = tempKf;
     }
 

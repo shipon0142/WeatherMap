@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search City"
+        app:showAsAction="ifRoom|collapseActionView"
+         />
+    <item
+        android:id="@+id/MylocationID"
+        android:orderInCategory="1"
+        android:title="My Location"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/TemperatureID"
+        android:orderInCategory="2"
+        android:title="Temperature Format"
+        app:showAsAction="never" >
+        <menu>
+        <item
+            android:id="@+id/CelciousId"
+            android:orderInCategory="1"
+            android:title="Celsius"
+            app:showAsAction="never" />
+            <item
+                android:id="@+id/FarenhaitId"
+                android:orderInCategory="1"
+                android:title="Fahrenheit"
+                app:showAsAction="never" />
+
+            </menu>
+    </item>
+    <item
+        android:id="@+id/RefreshID"
+        android:orderInCategory="3"
+        android:title="Refresh"
+        app:showAsAction="never" />
+</menu>

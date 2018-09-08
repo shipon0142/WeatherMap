@@ -3,4 +3,58 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="query_suggestions">
+        <item>Dhaka</item>
+        <item>Khulna</item>
+        <item>Barisal</item>
+        <item>Bandarban</item>
+        <item>Bhola</item>
+        <item>Bogra</item>
+        <item>Brahmanbaria</item>
+        <item>Chandpur</item>
+        <item>Chittagong</item>
+        <item>Comilla</item>
+        <item>Dinajpur</item>
+        <item>Faridpur</item>
+        <item>Feni</item>
+        <item>Gaibandha</item>
+        <item>Gazipur</item>
+        <item>Gopalganj</item>
+        <item>Habiganj</item>
+        <item>Jamalpur</item>
+        <item>Jessore</item>
+        <item>Jhenaidah</item>
+        <item>Kishoreganj</item>
+        <item>Kurigram</item>
+        <item>Kushtia</item>
+        <item>Lakshmipur</item>
+        <item>Lalmonirhat</item>
+        <item>Madaripur</item>
+        <item>Magura</item>
+        <item>Moulvibazar</item>
+        <item>Munshiganj</item>
+        <item>Mymensingh</item>
+        <item>Naogaon</item>
+        <item>Narail</item>
+        <item>Narayanganj</item>
+        <item>Narsingdi</item>
+        <item>Nawabganj</item>
+        <item>Netrakona</item>
+        <item>Nilphamari</item>
+        <item>Pabna</item>
+        <item>Panchagarh</item>
+        <item>Patuakhali</item>
+        <item>Pirojpur</item>
+        <item>Rajbari</item>
+        <item>Rajshahi</item>
+        <item>Rangpur</item>
+        <item>Satkhira</item>
+        <item>Shariatpur</item>
+        <item>Sherpur</item>
+        <item>Sirajganj</item>
+        <item>Sylhet</item>
+        <item>Tangail</item>
+        <item>Thakurgaon</item>
+    </string-array>
 </resources>

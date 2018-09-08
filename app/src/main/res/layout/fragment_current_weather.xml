@@ -2,26 +2,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#A3EBEA"
     android:orientation="vertical"
-    android:background="#88B9D6"
     tools:context="com.example.shipon.weathermap.fragments.CurrentWeatherFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
 
     <LinearLayout
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:gravity="center"
-            android:layout_gravity="center"
             android:layout_width="0sp"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:layout_weight="1"
+            android:gravity="center"
             android:orientation="vertical">
 
 
@@ -31,9 +31,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:padding="5dp"
-                android:text="17.0&#xb0;C"
+
                 android:textColor="#000000"
-                android:textSize="32dp"
+                android:textSize="37dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:text="00/00/0000"
+
                 android:textColor="#000000"
                 android:textSize="17dp" />
 
@@ -50,9 +50,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:text="Saturday"
+
                 android:textColor="#000000"
                 android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/DefaultLocationTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -63,22 +72,24 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/iconID"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
-                android:src="@drawable/humidity"
                 android:padding="10dp"
-                android:layout_width="180dp"
-                android:layout_height="110dp" />
+                android:src="@drawable/cloud_icon" />
 
             <TextView
-                android:layout_gravity="center"
                 android:id="@+id/DefaultWeatherDescriptionTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
                 android:padding="5dp"
-                android:text="Scattered Clouds"
                 android:textColor="#000000"
-                android:textSize="18dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -92,13 +103,14 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="3dp"
-            android:layout_marginBottom="10dp"
-            android:background="#84BCB8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:background="#84BCB8"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
@@ -107,9 +119,10 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="Min"
+                android:text="Min Temp"
                 android:textColor="#000000"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/DefaultMinimumWeatherTV"
@@ -117,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="170c"
+
                 android:textColor="#000000"
                 android:textSize="15dp" />
 
@@ -127,9 +140,10 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="Max"
+                android:text="Max Temp"
                 android:textColor="#000000"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/DefaultMaximumWeatherTV"
@@ -137,35 +151,33 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="170c"
+
                 android:textColor="#000000"
                 android:textSize="15dp" />
-
-
-
 
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:layout_marginBottom="10dp"
-            android:background="#84BCB8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:background="#84BCB8"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Sunrise"
                 android:textColor="#000000"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/DefaultSunriseTimeTV"
@@ -173,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="00-00-00 AM"
+
                 android:textColor="#000000"
                 android:textSize="15dp" />
 
@@ -184,7 +196,8 @@
                 android:padding="5dp"
                 android:text="Sunset"
                 android:textColor="#000000"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/DefaultSunsetTimeTV"
@@ -192,33 +205,33 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="00-00-00 AM"
+
                 android:textColor="#000000"
                 android:textSize="15dp" />
-
 
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="10dp"
-            android:background="#84BCB8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
+            android:background="#84BCB8"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Humidity"
                 android:textColor="#000000"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/DefaultHumidityPercentTV"
@@ -226,7 +239,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="86%"
+
                 android:textColor="#000000"
                 android:textSize="15dp" />
 
@@ -237,7 +250,8 @@
                 android:padding="5dp"
                 android:text="Pressure"
                 android:textColor="#000000"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/DefaultPressureTV"
@@ -245,16 +259,14 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="1002.12 hpa"
+
                 android:textColor="#000000"
                 android:textSize="15dp" />
-
 
 
         </LinearLayout>
 
     </LinearLayout>
-
 
 
 </LinearLayout>

@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
+
         applicationId "com.example.shipon.weathermap"
         minSdkVersion 21
         targetSdkVersion 26
@@ -28,6 +29,8 @@ dependencies {
     implementation 'com.android.support:support-annotations:27.1.1'
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    //implementation 'com.google.android.gms:play-services:11.6.0'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
